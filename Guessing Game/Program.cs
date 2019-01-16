@@ -9,8 +9,9 @@ namespace Guessing_Game
             Console.WriteLine("Welcome To The Guessing Game");
             Console.WriteLine("Please Guess a number 1-10");
             string userGuess = Console.ReadLine();
+            int userGuessAsInt = Convert.ToInt32(userGuess);
             Console.WriteLine("You guessed: " + userGuess);
-            if (userGuess.Equals("0"))
+            if (userGuessAsInt.Equals("0"))
             {
                 Console.WriteLine("You must guess a number between 1-10");
             }
@@ -20,41 +21,13 @@ namespace Guessing_Game
                 //They Win
                 Console.WriteLine("YOU WIN");
             }
-            //To Low
-            else if (userGuess.Equals("1"))
-            {
-                Console.WriteLine("You Lost, Guess Higher");
-            }
-            else if (userGuess.Equals("2"))
-            {
-                Console.WriteLine("You Lost, Guess Higher");
-            }
-            else if (userGuess.Equals("3"))
-            {
-                Console.WriteLine("You Lost, Guess Higher");
-            }
-            else if (userGuess.Equals("4"))
-            {
-                Console.WriteLine("You Lost, Guess Higher");
-            }
-            else if (userGuess.Equals("5"))
-            {
-                Console.WriteLine("You Lost, Guess Higher");
-            }
-            else if (userGuess.Equals("6"))
+            //To Low           
+            else if (userGuessAsInt <7 )
             {
                 Console.WriteLine("You Lost, Guess Higher");
             }       
             // To High
-            else if (userGuess.Equals("8"))
-            {
-                Console.WriteLine("You Lost, Guess Lower");
-            }
-            else if (userGuess.Equals("9"))
-            {
-                Console.WriteLine("You Lost, Guess Lower");
-            }
-            else if (userGuess.Equals("10"))
+            else if (userGuessAsInt >8)
             {
                 Console.WriteLine("You Lost, Guess Lower");
             }
