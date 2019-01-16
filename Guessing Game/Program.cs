@@ -19,13 +19,53 @@ namespace Guessing_Game
             {
                 //They Win
                 Console.WriteLine("YOU WIN");
-            } else
-            {
-                Console.WriteLine("You Lost");
             }
+            //To Low
+            else if (userGuess.Equals("1"))
+            {
+                Console.WriteLine("You Lost, Guess Higher");
+            }
+            else if (userGuess.Equals("2"))
+            {
+                Console.WriteLine("You Lost, Guess Higher");
+            }
+            else if (userGuess.Equals("3"))
+            {
+                Console.WriteLine("You Lost, Guess Higher");
+            }
+            else if (userGuess.Equals("4"))
+            {
+                Console.WriteLine("You Lost, Guess Higher");
+            }
+            else if (userGuess.Equals("5"))
+            {
+                Console.WriteLine("You Lost, Guess Higher");
+            }
+            else if (userGuess.Equals("6"))
+            {
+                Console.WriteLine("You Lost, Guess Higher");
+            }       
+            // To High
+            else if (userGuess.Equals("8"))
+            {
+                Console.WriteLine("You Lost, Guess Lower");
+            }
+            else if (userGuess.Equals("9"))
+            {
+                Console.WriteLine("You Lost, Guess Lower");
+            }
+            else if (userGuess.Equals("10"))
+            {
+                Console.WriteLine("You Lost, Guess Lower");
+            }
+            else
+            {
+                Console.WriteLine("Press 0 for rules");
             }
 
 
         }
     }
+}
+    
 
